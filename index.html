@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grade Calculate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Grade Calculator by Umair</h1>
+
+<div class="container">
+
+<!-- Quiz Section -->
+<div class="section">
+<h2>Quiz 
+Weightage: <input type="number" class="sectionWeight" value="20"> %
+</h2>
+<table class="sectionTable">
+<tr>
+<th>Title</th>
+<th>Total Marks</th>
+<th>Obtained Marks</th>
+<th>Marks by Section Weightage</th>
+</tr>
+</table>
+<button class="addBtn" onclick="addRow(this)">Add Quiz</button>
+</div>
+
+<!-- Assignment Section -->
+<div class="section">
+<h2>Assignment 
+Weightage: <input type="number" class="sectionWeight" value="10"> %
+</h2>
+<table class="sectionTable">
+<tr>
+<th>Title</th>
+<th>Total Marks</th>
+<th>Obtained Marks</th>
+<th>Marks by Section Weightage</th>
+</tr>
+</table>
+<button class="addBtn" onclick="addRow(this)">Add Assignment</button>
+</div>
+
+<!-- Mid Term Section -->
+<div class="section">
+<h2>Mid Term 
+Weightage: <input type="number" class="sectionWeight" value="30"> %
+</h2>
+<table class="sectionTable">
+<tr>
+<th>Title</th>
+<th>Total Marks</th>
+<th>Obtained Marks</th>
+<th>Marks by Section Weightage</th>
+</tr>
+</table>
+<button class="addBtn" onclick="addRow(this)">Add Mid</button>
+</div>
+
+<!-- Final Section -->
+<div class="section">
+<h2>Final 
+Weightage: <input type="number" class="sectionWeight" value="30"> %
+</h2>
+<table class="sectionTable">
+<tr>
+<th>Title</th>
+<th>Total Marks</th>
+<th>Obtained Marks</th>
+<th>Marks by Section Weightage</th>
+</tr>
+</table>
+<button class="addBtn" onclick="addRow(this)">Add Final</button>
+</div>
+
+<!-- Other Section -->
+<div class="section">
+<h2>Other 
+Weightage: <input type="number" class="sectionWeight" value="10"> %
+</h2>
+<table class="sectionTable">
+<tr>
+<th>Title</th>
+<th>Total Marks</th>
+<th>Obtained Marks</th>
+<th>Marks by Section Weightage</th>
+</tr>
+</table>
+<button class="addBtn" onclick="addRow(this)">Add Other</button>
+</div>
+
+<button onclick="calculate()">Calculate Total</button>
+
+<div class="resultBox">
+<h2 id="percentage">Total Percentage: 0%</h2>
+<h2 id="grade">Grade: -</h2>
+<h2 id="gpa">GPA: -</h2>
+</div>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>
